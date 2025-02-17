@@ -1,4 +1,4 @@
-NAME = zombie
+NAME = violence
 CXX = clang++
 STD = -std=c++98
 CXXFLAGS = -Wextra -Wall -Werror $(STD)

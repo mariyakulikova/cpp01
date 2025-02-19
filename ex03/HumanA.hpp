@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 17:41:23 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/02/17 18:26:01 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/02/19 09:26:14 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ private:
 	Weapon &weapon;
 
 public:
-	HumanA(const string &name, Weapon weapon);
+	HumanA(const string &name, Weapon &weapon);
 	~HumanA();
 	void attack();
 };

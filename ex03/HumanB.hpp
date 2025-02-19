@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 17:35:20 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/02/17 18:04:02 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/02/19 10:19:43 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ private:
 public:
 	HumanB(const string &name);
 	~HumanB();
-	void setWeapon(Weapon w);
+	void setWeapon(Weapon& w);
 	void attack();
 };
 

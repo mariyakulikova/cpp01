@@ -1,19 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/19 10:25:29 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/02/24 19:51:01 by mkulikov         ###   ########.fr       */
+/*   Created: 2025/02/24 10:40:06 by mkulikov          #+#    #+#             */
+/*   Updated: 2025/02/24 12:05:56 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Replacer.hpp"
+#ifndef HARL_HPP
+#define HARL_HPP
 
-int main(int argc, char **argv) {
-	if (argc != 4)
-		return 0;
+#include <iostream>
 
-}
+using std::cout;
+using std::string;
+using std::endl;
+
+class Harl
+{
+private:
+	void debug(void);
+	void info(void);
+	void warning(void);
+	void error(void);
+public:
+	Harl();
+	~Harl();
+	void complain(string level);
+};
+
+
+
+
+#endif
